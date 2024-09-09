@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    height: 400px;
+    position: relative;
+    border: 1px solid #e3e3e5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-photo {
+    height: 100px;
+    margin-bottom: 105px;
+    background-color: #f4f4f9;
+    border-bottom: 1px solid #e3e3e5;
+    display: flex;
+    justify-content: center;
+}
+
+.user-photo img {
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #3333;
+    padding: .25rem;
+    background-color: white;
+}
+#picture {
+    position: absolute;
+    top: 15px;   
+}
+#new {
+    position: absolute;
+    top: 159px;
+    left: 46%;
+    background-color: #121312;
+    opacity: 60%;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    display: none;
+    z-index: 3;
+}
+button{
+    cursor: pointer;
+}
+
+#userTitle {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 8rem;
+}
+
+#user_value {
+    font-size: 2rem;
+    color: #333;
+}
+
+.value-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.value-list li {
+    height: 48px;
+    width: 40px;
+    list-style: none;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    margin: 35px 0;
+    background-image: url(card_icons.png);
+    background-size: 378px;
+    transition: all .25s ease-out;
+}
+
+.value-list li[data-label=name]{
+    background-position: 0 -48px;
+}
+
+.value-list li[data-label=email]{
+    background-position: -68px -48px;
+}
+
+.value-list li[data-label=date]{
+    background-position: -135px -48px;
+}
+
+.value-list li[data-label=map]{
+    background-position: -203px -48px;
+}
+
+.value-list li[data-label=phone]{
+    background-position: -270px -48px;
+}
+
+.value-list li[data-label=pass]{
+    background-position: -338px -48px;
+}
+
+/* WHEN ACTIVE */
+.value-list li.active[data-label=name]{
+    background-position: 0 -96px;
+}
+
+.value-list li.active[data-label=email]{
+    background-position: -68px -96px;
+}
+
+.value-list li.active[data-label=date]{
+    background-position: -135px -96px;
+}
+
+.value-list li.active[data-label=map]{
+    background-position: -203px -96px;
+}
+
+.value-list li.active[data-label=phone]{
+    background-position: -270px -96px;
+}
+
+.value-list li.active[data-label=pass]{
+    background-position: -338px -96px;
+}
